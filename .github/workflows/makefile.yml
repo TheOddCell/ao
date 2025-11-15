@@ -1,0 +1,39 @@
+name: Build and Artifact
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Checkout code
+    - uses: actions/checkout@v4
+
+    # Install GCC
+    - name: Install dependencies
+      run: sudo apt update && sudo apt install -y build-essential
+
+    # Build binaries
+    - name: Build
+      run: make all
+
+    # Run tests
+    - name: Run check
+      run: make check
+
+    # Create dist
+    - name: Create dist
+      run: |
+        make dist
+
+    # Upload artifact
+    - name: Upload artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: ao
+        path: ao.tar.gz
