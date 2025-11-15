@@ -41,9 +41,7 @@ check: all
 # --------------------------
 # Distribution
 # --------------------------
-PACKAGE := ao
-VERSION := 1.0
-DISTFILE := $(PACKAGE)-$(VERSION).tar.gz
+DISTFILE := ao.tar.gz
 
 dist:
 	@echo "Creating $(DISTFILE)"
