@@ -28,8 +28,7 @@ jobs:
 
     # Create dist
     - name: Create dist
-      run: |
-        make dist
+      run: make dist
 
     # Upload artifact
     - name: Upload artifact
