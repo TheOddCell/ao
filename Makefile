@@ -45,10 +45,10 @@ DISTFILE := ao.tar.gz
 
 dist:
 	@echo "Creating $(DISTFILE)"
-	@mkdir -p $(PACKAGE)-$(VERSION)
-	@cp -a $(SRC) Makefile $(PACKAGE)-$(VERSION)/
-	@tar -czf $(DISTFILE) $(PACKAGE)-$(VERSION)
-	@rm -rf $(PACKAGE)-$(VERSION)
+	@mkdir -p ao-pack
+	@cp -a $(SRC) Makefile ao-pack/
+	@tar -czf $(DISTFILE) ao-pack
+	@rm -rf ao-pack
 	@echo "Created $(DISTFILE)"
 
 # --------------------------
