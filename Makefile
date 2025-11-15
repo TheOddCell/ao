@@ -1,16 +1,10 @@
 CC := gcc
 CFLAGS := -O2 -static
-
-# Targets
-TARGETS := ao argv
-
-all: $(TARGETS)
-
+all: ao argv
 ao: ao.c
 	$(CC) $(CFLAGS) -o $@ $<
-
 argv: argv.c
 	$(CC) $(CFLAGS) -o $@ $<
-
 clean:
-	rm -f $(TARGETS)
+	rm -f ao argv
+
