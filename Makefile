@@ -41,7 +41,7 @@ check: all
 # --------------------------
 # Distribution
 # --------------------------
-PACKAGE := ao-project
+PACKAGE := ao
 VERSION := 1.0
 DISTFILE := $(PACKAGE)-$(VERSION).tar.gz
 
