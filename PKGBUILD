@@ -1,5 +1,5 @@
 # Maintainer: TheOddCell <rayfb.to.1@gmail.com>
-pkgname=ao-git
+pkgname=ao-theoddcell-git
 pkgver=r2.e0cf8b5
 pkgrel=1
 pkgdesc="Arg 0"
@@ -11,6 +11,7 @@ makedepends=('git' 'make' 'gcc')
 provides=('ao')
 source=("$pkgname::git+$url")
 sha256sums=('SKIP')
+conflicts=("ao-git")
 
 pkgver() {
   cd "$srcdir/$pkgname"
