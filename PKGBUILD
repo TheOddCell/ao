@@ -1,6 +1,6 @@
 # Maintainer: TheOddCell <rayfb.to.1@gmail.com>
 pkgname=ao-theoddcell-git
-pkgver=r2.e0cf8b5
+pkgver=r12.779d1e2
 pkgrel=1
 pkgdesc="Arg 0"
 arch=('any')
